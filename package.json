@@ -5,8 +5,8 @@
   "main": "src/Server.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node dist/src/Server.js",
-    "dev": "tsc -w & nodemon dist/src/Server.js"
+    "start": "node dist/Server.js",
+    "dev": "tsc -w & nodemon dist/Server.js"
   },
   "author": "Ethan McDaniel",
   "license": "ISC",
