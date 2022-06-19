@@ -2,11 +2,11 @@
   "name": "otterapi",
   "version": "1.0.0",
   "description": "Typescript Express API boilerplate code",
-  "main": "Server.ts",
+  "main": "src/Server.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node dist/Server.js",
-    "dev": "tsc -w & nodemon dist/Server.js"
+    "start": "node dist/src/Server.js",
+    "dev": "tsc -w & nodemon dist/src/Server.js"
   },
   "author": "Ethan McDaniel",
   "license": "ISC",
