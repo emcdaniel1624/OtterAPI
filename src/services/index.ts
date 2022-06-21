@@ -1,1 +1,1 @@
-export * as todoService from "./todo.services";
+export * as objService from "./obj.service";

@@ -1,13 +1,13 @@
-import { Todo } from "./models";
+import { Obj } from "./models";
 import { connectDB } from ".";
 
-export const getTodos = async () => {
+export const getObjs = async () => {
     connectDB();
-    const posts = await Todo.find();
-    return posts;
+    const objs = await Obj.find();
+    return objs;
 }
 
-export const postTodo = () => {
+export const postObj = () => {
     connectDB();
     return 1;
 }

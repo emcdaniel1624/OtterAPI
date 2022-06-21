@@ -1,1 +1,1 @@
-export * as todosController from "./todos.controller";
+export * as objsController from "./obj.controller";

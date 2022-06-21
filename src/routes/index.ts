@@ -1,10 +1,10 @@
 import express from "express";
-import { todosController } from "../controllers";
+import { objsController } from "../controllers";
 
 const router = express.Router();
 
-router.get('/gettodos', todosController.getTodos);
+router.get('/getobjs', objsController.getObjs);
 
-router.post('/posttodo', todosController.postTodo);
+router.post('/postobj', objsController.postObj);
 
 export default router;
