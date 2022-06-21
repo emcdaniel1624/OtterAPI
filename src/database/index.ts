@@ -9,4 +9,4 @@ export const connectDB = () => {
         .catch((err) => console.log(err.message));
 };
 
-export * as objsDataAccess from './todos.database';
+export * as objsDataAccess from './objs.database';
