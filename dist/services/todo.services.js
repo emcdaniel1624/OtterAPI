@@ -13,7 +13,7 @@ exports.postTodo = exports.getTodos = void 0;
 const database_1 = require("../database");
 const getTodos = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        return yield database_1.todosDb.getTodos();
+        return yield database_1.todosDataAccess.getTodos();
     }
     catch (e) {
         throw new Error(e.message);
@@ -22,7 +22,7 @@ const getTodos = () => __awaiter(void 0, void 0, void 0, function* () {
 exports.getTodos = getTodos;
 const postTodo = (todo) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        return yield database_1.todosDb.postTodo();
+        return yield database_1.todosDataAccess.postTodo();
     }
     catch (e) {
         throw new Error(e.message);

@@ -2,18 +2,18 @@ import express from "express";
 import bodyParser from "body-parser";
 import routes from "./routes";
 
-const app = express();
+const server = express();
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+server.use(bodyParser.json());
+server.use(bodyParser.urlencoded({ extended: true }));
 
-app.get('/', (req, res) => res.send('Server is running.'));
+server.get('/', (req, res) => res.send('Server is running.'));
 
-app.use('/api', routes);
+server.use('/api', routes);
 
 const port = process.env.PORT || 3000;
 
-app.listen(port, () => console.log('API listening on port 3000'));
+server.listen(port, () => console.log(`API listening on port ${port}`));
 
-export default app;
+export default server;
 

@@ -23,5 +23,6 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.todosDb = void 0;
-exports.todosDb = __importStar(require("./todos.database"));
+exports.db = exports.todosDataAccess = void 0;
+exports.todosDataAccess = __importStar(require("./todos.database"));
+exports.db = __importStar(require("./dbConfig"));
