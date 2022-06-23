@@ -5,6 +5,6 @@
 #Uncomment the below line before pushing to a public repository to protect your connection string
 #.env
 
-bin/
+node_modules
 
 # End of https://www.toptal.com/developers/gitignore/api/dotenv
